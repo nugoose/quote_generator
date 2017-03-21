@@ -1,0 +1,80 @@
+@keyframes colors-wee-bg {
+  0% { background-color: #ffa367;}
+  10% { background-color: #ff4d4d;}
+  20% { background-color: #ff66b3;}
+  30% { background-color: #a64dff;}
+  40% { background-color: #6666ff;}
+  50% { background-color: #33d6ff;}
+  60% { background-color: #4dff88;}
+  70% { background-color: #d2ff99;}
+  80% { background-color: #ffcc00;}
+  90% { background-color: #adad85;}
+  100% { background-color: #a6a6a6;}
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+    background-color: #ffa367;
+    animation-name: colors-wee-bg;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+    width: 100%;
+    padding: 50px;
+    overflow: auto;
+  }
+
+p {
+    font-family: 'exo 2';
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'exo 2';
+}
+
+h3 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'exo 2';
+}
+
+.btn:focus, .btn:active:focus{
+  outline: none;
+}
+  
+#quoteButton{
+   position: absolute;
+   bottom: 20px;
+   right: 60px;
+    background-color: #ffa367;
+    animation-name: colors-wee-bg;
+    animation-duration: 140s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+  }
+
+#twitterButton{
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  -webkit-backface-visibility: hidden;
+}
+
+.jumbotron{
+  width: 650px;
+  height: 350px;
+  margin: 50px auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #d9d9d9;
+  position: relative;
+}

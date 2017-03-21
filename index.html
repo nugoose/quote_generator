@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>random quote generator</title>
+    <!-- a font from google -->
+    <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='random_quote.css'>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- js -->
+    <script type='text/javascript' src="random_quote.js"></script>
+    
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+    <!-- twitter stuff for button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</head>
+
+<body>
+    <h2 id="firstLine">this the random quote generator (version 2.0)</h2>
+    <h3 id="secondLine">there's a button below, click it, and i'll throw some quotes at thee ;)</h3>
+
+    <div class="container">
+      <div class="jumbotron">
+      <p id="quoteHere">thy quote will be here</p>
+        <p id="authorHere">thy author will be here</p>
+
+      <div id="twitterButton">  
+        <a class="twitter-share-button"
+            href="https://twitter.com/share"
+            data-url="https://nugoose.github.io"
+            data-size="large"
+            data-hashtags="freecodecamp"
+            data-text="no quote here yet">
+        </a>
+      </div>
+
+      <button class="btn" id="quoteButton">
+        <span class="glyphicon glyphicon-chevron-right"></span> Click moi <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+
+      </div>
+    </div>
+</body>
+</html>
